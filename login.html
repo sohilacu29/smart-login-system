@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100;1,300;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="links/css/all.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+   <div class="container" id="container">
+     <div class="form-container sign-up">
+      <form>
+        <h1  class="fs-2">Create Account</h1>
+        <div class="social-icons">
+          <a href="#" class="icons">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <span> or use your email for registeration</span>
+        <input class="name form-control " oninput=" validName()" placeholder="Enter your name" type="text">
+        <!-- <div class="namecheck"><p>should the name contain letter</p>  </div>          
+                     -->
+        <input class="email form-control " oninput="validEmail()" placeholder="Enter your email" type="email">
+ <!-- <div class="emailcheck"><p>should the name contain letter</p></div> -->
+        <input  class="pass form-control  " oninput="validPass()"  placeholder="Enter your password" type="password">
+                        <!-- <div class="passcheck"><p>should the password contain 6 letter</p></div> -->
+
+        <button class="btnSignup">Sign Up</button>
+
+      </form>
+     </div>
+
+     <div class="form-container sign-in">
+     <div class="formTest">
+      <form>
+        <h1 >Sign In</h1>
+        <div class="social-icons">
+          <a href="#" class="icons">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <span> or use your email and password</span>
+        
+        <input id="signinEmail"  class="signEmail" placeholder="Enter your email" type="email">
+        <input id="signinPassword" class="signPass"  placeholder="Enter your password" type="password">
+        <a href="#">Forget Your Password?</a>
+        <button  class="btnSign" >Sign In</button>
+
+      </form>
+     </div>
+     </div>
+<div class="toggle-container">
+  <div class="toggle">
+    <div class="toggle-panel toggle-left">
+<h1>Welcome Back!</h1>
+<p>Enter your personal details to use all of site features </p>
+<button class="hidden" id="login">Sign In</button>
+    </div>
+    <div class="toggle-panel toggle-right">
+      <h1>Hello, Friends!</h1>
+      <p>register with your personal details to use all of site features </p>
+      <button class="hidden" id="register">Sign Up</button>
+          </div>
+  </div>
+</div>
+   </div>
+
+    <script src="links/js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
